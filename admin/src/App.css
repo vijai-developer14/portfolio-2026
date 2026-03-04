@@ -1,0 +1,19 @@
+.login_bg{width: 100vw;height: 100vh;display: flex;align-items: center;justify-content: center;}
+.login_form{display: flex;flex-direction: column;gap: 20px;}
+.login_form input{padding: 14px;border: solid 1px rgb(194, 194, 194);font-size: 18px;border-radius: 8px;}
+.login_form input:focus{outline: #FB4990;}
+.login_bg div p{text-align: center;font-size: 24px;color: rgb(50, 50, 50);}
+/* =========================== Admin Panel Table*/
+.tableBg{width: 100%;background-color: white;position: relative;}
+.admin_tBody tr th{text-align: left;padding: 14px;}
+.admin_tBody tr td{text-align: left;padding: 14px;}
+.admin_tBody tr td img{height: 100px;width: 100px;}
+.add_proj_bg{width: 600px;margin: auto;background-color: #FFFFFF;padding: 20px 30px;position: absolute;
+top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.add_proj_bg form {display: flex;flex-direction: column;gap: 18px;}
+.add_proj_bg form input{font-size: 18px;color: var(--primary-bg-color);padding: 10px 16px;
+transition: all 0.3s ease;border-radius: 4px;border: solid 1px rgb(229, 229, 229);}
+.add_proj_bg form input:focus{outline: #FB4990;}
+.add_proj_bg button{margin-left: 500px;margin-top: 10px;margin-bottom: 20px;}
+.add_proj_bg p{text-align: center;font-size: 24px;color: var(--primary-bg-color);font-weight: 500;
+margin-bottom: 20px;}
