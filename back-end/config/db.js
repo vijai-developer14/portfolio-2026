@@ -1,0 +1,20 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
+const {MongoClient} = require("mongodb");
+let dbConnection;
+module.exports = {
+    // initializing a function
+    connectToDb : (cb)=>{
+        MongoClient.connect(`${process.env.MONGO_URI}`)
+        .then((client)=>{
+            dbConnection = client.db();
+            return cb();
+        })
+        .catch((err)=>{
+            console.log(err)
+            return cb(err);
+        })
+    },
+    getDb: ()=>dbConnection
+}

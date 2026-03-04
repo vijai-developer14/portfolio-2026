@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "framer-motion": "^12.34.0",
+    "react-intersection-observer": "^10.0.2"
+  }
+}
