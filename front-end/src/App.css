@@ -104,7 +104,7 @@ border-radius: 4px;transition: all 0.3s ease;}
 .footer_foot_bg a p{font-size: 18px;color: white;text-transform: uppercase;font-weight: 300;}
 .footer_foot_bg  p{font-size: 18px;color: white;text-transform: uppercase;font-weight: 300;}
 .ft_cnt, .ft_txt_2{font-size: 26px;font-weight: 300;}
-.footer_foot_bg a, .footer_foot_bg p{width: 220px;}
+.footer_foot_bg a, .footer_foot_bg p{width: 230px;}
 .footer_foot_bg a:nth-child(3){display: flex;align-items: center;justify-content: end;}
 .uparrow_bg{border: solid 1px white;padding: 10px;border-radius: 50px;transition: all 0.3s ease;}
 .uparrow_bg:hover {background-color: white;color: black;}
