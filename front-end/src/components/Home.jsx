@@ -259,7 +259,7 @@ export default function  Home (){
                                     <a href="mailto:vijaiv383@gmail.com" target="_blank" className="font_readex" >MAIL</a>
                                 </li>
                                 <li>
-                                    <a href="www.linkedin.com/in/vijai-ranga-rajan" target="_blank" className="font_readex">LINKEDIN</a>
+                                    <a href="https://www.linkedin.com/in/vijai-ranga-rajan/" target="_blank" className="font_readex">LINKEDIN</a>
                                 </li>
                                 <li>
                                     <a href="https://github.com/vijai-developer14" target="_blank" className="font_readex">GIT HUB</a>
