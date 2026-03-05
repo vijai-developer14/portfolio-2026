@@ -16,44 +16,23 @@ export default function Works(){
         
         window.addEventListener("mousemove", mouseMove);
 
-        if(projectData.length !== 0){
         document.querySelectorAll(".work_img").forEach((x)=>{
             x.addEventListener("mouseenter", mouseEnter);
         });
         document.querySelectorAll(".work_img").forEach((x)=>{
             x.addEventListener("mouseleave", mouseLeave);
         });
-        }
+        
         return () => {
             window.removeEventListener("mousemove", mouseMove);
-            document.querySelectorAll(".work_img").forEach((x)=>{
-            x.removeEventListener("mouseenter", mouseEnter);
+                document.querySelectorAll(".work_img").forEach((x)=>{
+                x.removeEventListener("mouseenter", mouseEnter);
             });
           
         }
-    },[projectData]);
+    },[]);
 
-    // onscroll scale
-    // useEffect(()=>{
-    //     const observer = new IntersectionObserver((entries)=>{
-    //         entries.forEach((entry)=>{
-    //             if(entry.isIntersecting){
-    //                 SetActivateScale(true)
-    //             }
-    //         })
-    //     },{threshold: 0.4});
-    //     observer.observe(prjContainer.current) 
-            
-    //     const onScrollScale = ()=>{
-    //         SetImgScale({y:window.scrollY});
 
-    //     }
-    //     window.addEventListener("scroll", onScrollScale)
-    //     return()=>{
-    //         observer.disconnect();
-    //         window.removeEventListener("scroll", onScrollScale)
-    //     }
-    // },[projectData])
 
     useEffect(()=>{
         axios.get(`${process.env.REACT_APP_API_URL}/work-projects-get-client`)
@@ -74,7 +53,7 @@ export default function Works(){
                     <p className="font_readex">• View Work</p>
                 </div>
             }
-            {
+            {/* {
                 projectData.length > 0 && ( 
                     <div className="proff_work_bg" >
                         {
@@ -98,7 +77,75 @@ export default function Works(){
                         }
                     </div>
                 )
-            } 
+            }  */}
+            
+                
+                    <div className="proff_work_bg" >
+                        
+                            <div className="proff_work_cnt_bg box1">
+                                <div className="work_img_bg">
+                                    <a href="https://i5housing.com/" target="_blank">
+                                        <img src="../assets/work-i5-housing.png"
+                                         alt="Work - i5 Housing"  className="work_img"/>
+                                    </a>
+                                </div>
+                                <div className="prof_wrk_name_bg">
+                                    <p className="font_readex" >i5Housing and Properties</p>
+                                    <a href="https://i5housing.com/" className="font_readex" target="_blank">Live Link</a>
+                                    
+                                </div>
+                                <p className="font_readex tech_stack">(HTML5, CSS3, JavaScript E6+)</p>
+                            </div>  
+
+                            <div className="proff_work_cnt_bg box2">
+                                <div className="work_img_bg">
+                                    <a href="https://www.radiancerealty.in/" target="_blank">
+                                        <img src="../assets/work-radiance.png"
+                                         alt="Work - i5 Housing"  className="work_img"/>
+                                    </a>
+                                </div>
+                                <div className="prof_wrk_name_bg">
+                                    <p className="font_readex" >Radiance Realty</p>
+                                    <a href="https://www.radiancerealty.in/" className="font_readex" target="_blank">Live Link</a>
+                                    
+                                </div>
+                                <p className="font_readex tech_stack">(HTML5, CSS3, JavaScript E6+)</p>
+                            </div> 
+
+                            <div className="proff_work_cnt_bg box3">
+                                <div className="work_img_bg">
+                                    <a href="https://vgraohomes.in/" target="_blank">
+                                        <img src="../assets/work-vgrao-homes.png"
+                                         alt="Work - i5 Housing"  className="work_img"/>
+                                    </a>
+                                </div>
+                                <div className="prof_wrk_name_bg">
+                                    <p className="font_readex" >VG Rao Homes</p>
+                                    <a href="https://vgraohomes.in/" className="font_readex" target="_blank">Live Link</a>
+                                    
+                                </div>
+                                <p className="font_readex tech_stack">(HTML5, CSS3, JavaScript E6+)</p>
+                            </div> 
+
+                            <div className="proff_work_cnt_bg box4">
+                                <div className="work_img_bg">
+                                    <a href="https://www.chennailand.com/" target="_blank">
+                                        <img src="../assets/work-chennailand.png"
+                                         alt="https://www.chennailand.com/"  className="work_img"/>
+                                    </a>
+                                </div>
+                                <div className="prof_wrk_name_bg">
+                                    <p className="font_readex" >Chennailand</p>
+                                    <a href="https://www.chennailand.com/" className="font_readex" target="_blank">Live Link</a>
+                                    
+                                </div>
+                                <p className="font_readex tech_stack">(HTML5, CSS3, JavaScript E6+)</p>
+                            </div> 
+                        
+                    </div>
+                
+            
+            
         </div>
     );
 }

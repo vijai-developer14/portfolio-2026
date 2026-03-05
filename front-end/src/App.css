@@ -173,11 +173,11 @@ font-weight: 500;font-size: 22px;transition: all 0.3s ease;border: solid 1px rgb
 }
 
 @media screen and (max-width: 1516px) {
-.proff_work_bg div:nth-child(2) a imga img{height: 600px;max-width: 47vw;}
+.proff_work_bg div:nth-child(2) a  img{height: 600px;max-width: 47vw;}
 .proff_work_bg div:nth-child(3) a img{height: 646px;max-width: 40vw;}
 .proff_work_bg div:nth-child(4) a img{height: 494px;max-width: 52vw;margin-top:-150px;}
 }
-@media screen and (max-width: 1466px) {
+@media screen and (max-width: 1473px) {
 .proff_work_bg div:nth-child(1) a img{height: 700px;max-width: 44vw;}
 .proff_work_bg div:nth-child(2) a img{height: 595px;max-width: 47vw;}
 .proff_work_bg div:nth-child(3) a img{height: 606px;max-width: 40vw;}
@@ -285,7 +285,7 @@ font-weight: 500;font-size: 22px;transition: all 0.3s ease;border: solid 1px rgb
   .fed {margin: 22px 0;}
   .iau_bg {margin-top: 14px;}
   .ptmy {margin-top: 114px;}
-  .pw_container {margin-top: 90px;}
+  .pw_container {margin-top: 116px;}
   .uparrow_bg {background-color: white;color: black;}
   .mern_lnkbg a {font-size: 16px;}
 }
